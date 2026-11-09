@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discord
+    url: https://discord.gg/DU9SZ7BkeK
+    about: Ask a question or get help in the AI Privacy Guard Discord. Include your Chrome version, extension version, the site, and what happened.

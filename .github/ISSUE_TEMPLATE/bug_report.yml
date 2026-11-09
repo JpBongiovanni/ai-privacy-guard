@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in AI Privacy Guard did not work the way you expected.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Chrome version, extension version, the site, and what happened are the details that make a report usable.
+
+  - type: input
+    id: chrome_version
+    attributes:
+      label: Chrome version
+      description: Open chrome://version and copy the first line.
+      placeholder: "131.0.6778.85"
+    validations:
+      required: true
+
+  - type: input
+    id: extension_version
+    attributes:
+      label: Extension version
+      description: Shown under the name in the toolbar popup, or on chrome://extensions.
+      placeholder: "1.6.4"
+    validations:
+      required: true
+
+  - type: input
+    id: site_url
+    attributes:
+      label: Site URL
+      description: The page you were on when this happened.
+      placeholder: "https://example.com/page"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did, in order.
+      placeholder: |
+        1. Open the site
+        2. Click the AI Privacy Guard icon
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you thought would happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, the text of an error, or other context. Optional.
+    validations:
+      required: false
